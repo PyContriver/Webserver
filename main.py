@@ -16,6 +16,10 @@ async def users(req):
 async def users_name(req):
     return web.Response(text="users name")
 
+@routes.get('/users/names')
+async def users_name(req):
+    return web.Response(text="users names")
+
 @routes.post('/tasks')
 async def tasks(req):
     create_tasks()
