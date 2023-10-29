@@ -22,7 +22,6 @@ async def users_name(req):
 
 @routes.post('/tasks')
 async def tasks(req):
-    create_tasks()
     return web.Response(text="tasks created")
 
 if __name__ == '__main__':
